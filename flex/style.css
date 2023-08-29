@@ -1,0 +1,28 @@
+.flex{
+    color:white;
+    display: inline-flex;
+    flex-direction: column;
+    border: 5px solid gold;
+}
+.flex > div{
+    flex-basis: 100px;
+}
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.indigo{
+    background-color: indigo;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .grid {
+        background-color: #000;
+        height: 748px;
+        width: 748px;
+        display: grid;
+        grid-template-columns: 320px auto 50px;
+        gap: 9px;
+      }
+
+      .red {
+        background-color: #e72f24;
+
+        height: 414px;
+      }
+
+      .blue {
+        background-color: #004592;
+        height: 130px;
+
+        border-bottom: 10px solid black;
+      }
+
+      .yellow {
+        background-color: #f9d01e;
+        height: 20px;
+        width: 198px;
+      }
+
+      .black {
+        background-color: #232629;
+        /* border: 1px solid pink; */
+        width: 153px;
+      }
+
+      .white {
+        background-color: #f0f1ec;
+      }
+
+      .second {
+        grid-column: span 2;
+        height: 414px;
+      }
+
+      .third {
+        height: 296px;
+      }
+
+      /* .fourth{
+        height: 155px;
+      } */
+
+      .flex1{
+        background-color: #f0f1ec;
+        display: flex;
+        flex-direction: column;
+        grid-row: span 2;
+        /* grid-column-end: -1; */
+      }
+
+      .flex2{
+       
+        display: flex;
+        gap: 9px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="grid">
+      <div class="red"></div>
+      <div class="white second"></div>
+      <div class="white third"></div>
+      <div class="white third"></div>
+      <div class="flex1">
+        <div class="blue"></div>
+        <div class="white fourth"></div>
+      </div>
+      <div class="white"></div>
+      <div class="flex2">
+        <div class="yellow"></div>
+
+      <div class="black"></div>
+      </div>
+      
+      
+    </div>
+  </body>
+</html>
